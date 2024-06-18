@@ -1,0 +1,313 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fce4ec; /* Pink background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff; /* White background for forms */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="date"], textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button.btn {
+    background-color: #e91e63; /* Pink button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 16px;
+}
+
+button.btn:hover {
+    background-color: #d81b60; /* Darker pink on hover */
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Task styles */
+.tasks, .add-task, .change-password {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.tasks h3, .change-password h2 {
+    color: #e91e63; /* Pinkish color for headers */
+}
+
+.tasks ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tasks ul li {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tasks ul li.completed {
+    background-color: #f0f0f0;
+    text-decoration: line-through;
+    color: #888;
+}
+
+.tasks ul li button, .task .btn {
+    background-color: #e91e63; /* Pink button */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.tasks ul li button:hover, .task .btn:hover {
+    background-color: #d81b60; /* Darker pink on hover */
+}
+
+.add-task form, .change-password form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.add-task input[type="text"], .add-task textarea, .add-task input[type="date"], .add-task select {
+    flex: 1 1 calc(50% - 20px);
+}
+
+.change-password input[type="password"] {
+    flex: 1 1 100%;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .tasks ul li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .tasks ul li button {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .add-task input[type="text"], .add-task textarea, .add-task input[type="date"], .add-task select {
+        flex: 1 1 100%;
+    }
+}
+
+/* Task specific styles */
+.task {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.task h3 {
+    color: #e91e63; /* Pinkish color for headers */
+    margin-bottom: 10px;
+}
+
+.task p {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.task .completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.task .btn {
+    background-color: #e91e63; /* Pink button */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.task .btn:hover {
+    background-color: #d81b60; /* Darker pink on hover */
+}
+
+.completed .btn-complete {
+    display: none; /* Hide complete button for completed tasks */
+}
+.button-group {
+    margin-bottom: 20px;
+}
+
+.button-group .btn {
+    background-color: #e91e63; /* Pink button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.button-group .btn:hover {
+    background-color: #d81b60; /* Darker pink on hover */
+}
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fce4ec; /* Pink background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff; /* White background for main content */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+h1 {
+    color: #e91e63; /* Pinkish color for headers */
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #e91e63; /* Pink button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #d81b60; /* Darker pink on hover */
+}
+
+.tasks {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.tasks h3 {
+    color: #e91e63; /* Pinkish color for headers */
+    margin-bottom: 10px;
+}
+
+.tasks ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tasks ul li {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tasks ul li.completed {
+    background-color: #f0f0f0;
+    text-decoration: line-through;
+    color: #888;
+}
+
+.tasks ul li button {
+    background-color: #e91e63; /* Pink button */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.tasks ul li button:hover {
+    background-color: #d81b60; /* Darker pink on hover */
+      }
