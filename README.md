@@ -43,7 +43,7 @@ To run this project locally, follow these steps:
 
 2.  -Set up the database:
 
-Create a MySQL database named todo_app.
+Create a MySQL database named task_manager.
 Import the task_manager.sql file provided in the repository to set up nessesary tables.
 Configure the database connection:
 Update the database connection details in php/config.php with your MySQL database credentials. 
